@@ -1,0 +1,51 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="p-4">
+  <div class="mb-3">
+    <label for="name" class="form-label">Nombre:</label>
+    <input id="name" formControlName="name" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo electrónico:</label>
+    <input id="email" formControlName="email" type="email" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="url" class="form-label">URL:</label>
+    <input id="url" formControlName="url" type="url" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="date" class="form-label">Fecha:</label>
+    <input id="date" formControlName="date" type="date" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="time" class="form-label">Tiempo:</label>
+    <input id="time" formControlName="time" type="time" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="datetime" class="form-label">Fecha y hora:</label>
+    <input id="datetime" formControlName="datetime" type="datetime-local" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="month" class="form-label">Mes:</label>
+    <input id="month" formControlName="month" type="month" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="week" class="form-label">Semana:</label>
+    <input id="week" formControlName="week" type="week" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="number" class="form-label">Número (min -10, max 10):</label>
+    <input id="number" formControlName="number" type="number" min="-10" max="10" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="tel" class="form-label">Teléfono:</label>
+    <input id="tel" formControlName="tel" type="tel" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="search" class="form-label">Término de búsqueda:</label>
+    <input id="search" formControlName="search" type="search" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="color" class="form-label">Color favorito:</label>
+    <input id="color" formControlName="color" type="color" class="form-control form-control-color">
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

@@ -1,0 +1,108 @@
+<div class="container">
+  <form>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="apellido" class="col-form-label">Apellido</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="apellido" placeholder="Ingresar Apellidos como aparece en Pasaporte">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="nombre" class="col-form-label">Nombre</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresar Un Solo Nombre">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="fecha_nacimiento" class="col-form-label">Fecha de Nacimiento</label>
+      </div>
+      <div class="col-2">
+        <input type="text" class="form-control" id="dia_nacimiento" placeholder="Día">
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" id="mes_nacimiento" placeholder="Mes">
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" id="anio_nacimiento" placeholder="Año">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="ciudad_nacimiento" class="col-form-label">Ciudad de Nacimiento</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="ciudad_nacimiento" placeholder="Ingresar Ciudad de Nacimiento">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="pais_nacimiento" class="col-form-label">País de Nacimiento</label>
+      </div>
+      <div class="col-8">
+        <select class="form-control" id="pais_nacimiento">
+          <option value="">Seleccionar País</option>
+          <option *ngFor="let country of countries" [value]="country.name.common">{{ country.name.common }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="nacionalidad" class="col-form-label">Nacionalidad</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="nacionalidad" placeholder="Ingresar Nacionalidad">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="numero_pasaporte" class="col-form-label">Número de Pasaporte</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="numero_pasaporte" placeholder="Ingresar Número de Pasaporte">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="pais_emision" class="col-form-label">País de Emisión de Pasaporte</label>
+      </div>
+      <div class="col-8">
+        <select class="form-control" id="pais_emision">
+          <option value="">Seleccionar País</option>
+          <option *ngFor="let country of countries" [value]="country.name.common">{{ country.name.common }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="fecha_emision" class="col-form-label">Fecha de Emisión del Pasaporte</label>
+      </div>
+      <div class="col-2">
+        <input type="text" class="form-control" id="dia_emision" placeholder="Día">
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" id="mes_emision" placeholder="Mes">
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" id="anio_emision" placeholder="Año">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="fecha_vencimiento" class="col-form-label">Fecha de Vencimiento del Pasaporte</label>
+      </div>
+      <div class="col-2">
+        <input type="text" class="form-control" id="dia_vencimiento" placeholder="Día">
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" id="mes_vencimiento" placeholder="Mes">
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" id="anio_vencimiento" placeholder="Año">
+      </div>
+    </div>
+  </form>
+</div>
